@@ -10,20 +10,20 @@ Inicia a máquina virtual.
 ### git clone https://github.com/victorreinor/tdd-nodejs
 Clona o repositório do projeto.
 
-### cd tdd-nodejs
+### `cd tdd-nodejs`
 Entra dentro da pasta do repositório.
 
 Em seguida crie um arquivo **.env** com base no **.env.example** para setar as variáveis de configuração do sistema.
 
 Caso a máquina virtual for criada igual a do exemplo acima, não irá precisar alterar nada, somente crie a **.env** copiando o conteúdo completo.
 
-### yarn sequelize db:migrate
+### `yarn sequelize db:migrate`
 Roda as migrations para subir as tabelas do banco de dados.
 
-### yarn install
+### `yarn install`
 Instala as dependências que estão sendo usadas no projeto.
 
-### yarn dev
+### `yarn dev`
 Inicia o projeto.
 
 Em seguida importe o arquivo **insomnia.json** dentro do rest cliente **Insomnia**.
