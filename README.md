@@ -1,13 +1,13 @@
 # TDD-NODEJS
 Testes em Nodejs
 
-### docker run --name database2 -e POSTGRES_USER=docker -e POSTGRES_PASSWORD=docker -p 5432:5432 -d postgres:11
+### `docker run --name database2 -e POSTGRES_USER=docker -e POSTGRES_PASSWORD=docker -p 5432:5432 -d postgres:11`
 Cria a máquina virtual do postgres passando como parametro o nome do container no docker, usuário do banco de dados, senha do banco de dados e a porta que irá rodar o banco de dados.
 
-### docker start database
+### `docker start database`
 Inicia a máquina virtual.
 
-### git clone https://github.com/victorreinor/tdd-nodejs
+### `git clone https://github.com/victorreinor/tdd-nodejs`
 Clona o repositório do projeto.
 
 ### `cd tdd-nodejs`
