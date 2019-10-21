@@ -24,7 +24,7 @@ module.exports = {
   collectCoverageFrom: ['src/app/**/*.js'],
 
   // The directory where Jest should output its coverage files
-  coverageDirectory: "coverage",
+  coverageDirectory: '__tests__/coverage',
 
   // An array of regexp pattern strings used to skip coverage collection
   // coveragePathIgnorePatterns: [
@@ -33,8 +33,8 @@ module.exports = {
 
   // A list of reporter names that Jest uses when writing coverage reports
   coverageReporters: [
-    "text",
-    "lcov"
+    'text',
+    'lcov',
   ],
 
   // An object that configures minimum threshold enforcement for coverage results
@@ -130,7 +130,7 @@ module.exports = {
   // snapshotSerializers: [],
 
   // The test environment that will be used for testing
-  testEnvironment: "node",
+  testEnvironment: 'node',
 
   // Options that will be passed to the testEnvironment
   // testEnvironmentOptions: {},
@@ -140,7 +140,7 @@ module.exports = {
 
   // The glob patterns Jest uses to detect test files
   testMatch: [
-    "__tests__/**/*.test.js"
+    '**/__tests__/**/*.test.js',
   ],
 
   // An array of regexp pattern strings that are matched against all test paths, matched tests are skipped
@@ -165,7 +165,7 @@ module.exports = {
 
   // A map from regular expressions to paths to transformers
   transform: {
-    ".(js|jsx|ts|tsx)": "@sucrase/jest-plugin"
+    '.(js|jsx|ts|tsx)': '@sucrase/jest-plugin',
   },
 
   // An array of regexp pattern strings that are matched against all source file paths, matched files will skip transformation
