@@ -1,5 +1,6 @@
 # TDD-NODEJS
-Testes em Nodejs
+
+Jest --> Desenvolvido pelo Facebook para testes, funciona no Nodejs, React, React-Native. Ele contém tudo o que precisa em conceito de testes e não precisa ficar instalando dependências a parte para suprir a demanda.
 
 ### `docker run --name database2 -e POSTGRES_USER=docker -e POSTGRES_PASSWORD=docker -p 5432:5432 -d postgres:11`
 Cria a máquina virtual do postgres passando como parametro o nome do container no docker, usuário do banco de dados, senha do banco de dados e a porta que irá rodar o banco de dados.
