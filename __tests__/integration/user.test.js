@@ -11,6 +11,28 @@ describe('User', () => {
         password_hash: '123456'
       });
 
-      expect(response.body).toHaveProperty('id');
+    expect(response.body).toHaveProperty('id');
+  });
+
+  it('should not be able to register with duplicated email', async () => {
+    await request(app)
+      .post('/users')
+      .send({
+        name: 'Victor Reinor',
+        email: 'victorreinor@gmail.com',
+        password_hash: '123456'
+      });
+
+    expect(response.body).toHaveProperty('id');
+
+    const response = await request(app)
+      .post('/users')
+      .send({
+        name: 'Victor Reinor',
+        email: 'victorreinor@gmail.com',
+        password_hash: '123456'
+      });
+
+    expect(response.status).toBe(400);
   });
 });
