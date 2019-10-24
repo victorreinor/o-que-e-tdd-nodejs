@@ -8,7 +8,7 @@ describe('User', () => {
       .send({
         name: 'Victor Reinor',
         email: 'victorreinor@gmail.com',
-        password_hash: '123456'
+        password_hash: '123456',
       });
 
     expect(response.body).toHaveProperty('id');
@@ -20,7 +20,7 @@ describe('User', () => {
       .send({
         name: 'Victor Reinor',
         email: 'victorreinor@gmail.com',
-        password_hash: '123456'
+        password_hash: '123456',
       });
 
     expect(response.body).toHaveProperty('id');
@@ -30,7 +30,7 @@ describe('User', () => {
       .send({
         name: 'Victor Reinor',
         email: 'victorreinor@gmail.com',
-        password_hash: '123456'
+        password_hash: '123456',
       });
 
     expect(response.status).toBe(400);
