@@ -1,6 +1,28 @@
-# TDD-NODEJS
+# tdd-js
 
-Jest: Desenvolvido pelo Facebook para testes, funciona no Nodejs, React, React-Native. Ele contém tudo o que precisa em conceito de testes e não precisa ficar instalando dependências a parte para suprir a demanda.
+O que é tdd ? **Test-driven development** (Desenvolvido dirigido a testes), serve para:
+- Criar testes antes das funcionalidades
+  - É desenvolvido um teste de função especifica antes mesmo de ela existir, assim auxiliando no desenvolvimento pois já sabemos o que nos espera no final.
+- Facilita visualização das regras de negócio
+  - Geralmente definimos os testes, o comportamento dele e o que esperamos dele, e ai depois fazemos a aplicação funcionar
+
+Code Covarage:
+- Coleta informações das linhas de códigos que seus testes atuais não alcançaram;
+  - Exibe as linhas que ainda não foram testadas e retorna atraves de uma interface gráfica e o percentual de cada controller testado.
+
+Por que testar ?
+- Garantir que tudo vai continuar funcionando;
+
+Tipos de testes
+- Testes Unitários
+  - Testa uma função mínima e pura, que não realiza efeitos colaterais como acessos ao banco ou integrações externas;
+- Testes de Integração
+  - Os principais testes do back-end, testam funcionalidades completas como acesso à rotas até retorno do controller;
+- Testes E2E
+  - Testes de interface que simulam o acesso do usuário (front-end);
+
+Ferramenta que será utilizada:
+- **Jest**: Desenvolvido pelo Facebook para testes, funciona no Nodejs, React, React-Native. Ele contém tudo o que precisa em conceito de testes e não precisa ficar instalando dependências a parte para suprir a demanda.
 
 ### `docker run --name database2 -e POSTGRES_USER=docker -e POSTGRES_PASSWORD=docker -p 5432:5432 -d postgres:11`
 Cria a máquina virtual do postgres passando como parametro o nome do container no docker, usuário do banco de dados, senha do banco de dados e a porta que irá rodar o banco de dados.
