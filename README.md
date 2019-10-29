@@ -1,6 +1,6 @@
 # tdd-js
 
-O que é tdd ? **Test-driven development** (Desenvolvido dirigido a testes), serve para:
+O que é tdd ? **Test-driven development** (Desenvolvimento dirigido a testes), serve para:
 - Criar testes antes das funcionalidades
   - É desenvolvido um teste de função especifica antes mesmo de ela existir, assim auxiliando no desenvolvimento pois já sabemos o que nos espera no final.
 - Facilita visualização das regras de negócio
